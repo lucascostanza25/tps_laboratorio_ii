@@ -25,6 +25,7 @@ namespace MiCalculadora
         private void btnOperar_Click(object sender, EventArgs e)
         {
             lblResultado.Text = Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text).ToString();
+            lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.Text} {txtNumero2.Text} = {lblResultado.Text}\n");
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -84,6 +85,11 @@ namespace MiCalculadora
             resultado = Calculadora.Operar(operando1, operando2, char.Parse(operador));
 
             return resultado;
+        }
+
+        private void lstOperaciones_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lstOperaciones.Text = $"{txtNumero1.Text} {cmbOperador.Text} {txtNumero2} = {lblResultado}\n";
         }
     }
 }

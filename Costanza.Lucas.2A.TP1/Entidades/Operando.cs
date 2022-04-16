@@ -60,7 +60,7 @@ namespace Entidades
         {
             double resultado;
 
-            resultado = n1.numero + n2.numero;
+            resultado = n1.numero * n2.numero;
 
             return resultado;
         }
@@ -71,7 +71,7 @@ namespace Entidades
 
             if(n2.numero!=0)
             {
-                resultado = n1.numero + n2.numero;
+                resultado = n1.numero / n2.numero;
             }
             else
             {
@@ -85,7 +85,7 @@ namespace Entidades
         {
             double resultado;
 
-            resultado = n1.numero + n2.numero;
+            resultado = n1.numero - n2.numero;
 
             return resultado;
         }
