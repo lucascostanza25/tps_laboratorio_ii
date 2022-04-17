@@ -101,7 +101,7 @@ namespace MiCalculadora
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Operando operandoBinario = new Operando();
-            lblResultado.Text = operandoBinario.BinarioDecimal(lblResultado.Text);
+            lblResultado.Text = operandoBinario.DecimalBinario(lblResultado.Text);
         }
     }
 }
