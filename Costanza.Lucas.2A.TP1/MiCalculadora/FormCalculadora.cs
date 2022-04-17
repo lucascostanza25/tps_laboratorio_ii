@@ -91,5 +91,17 @@ namespace MiCalculadora
         {
             lstOperaciones.Text = $"{txtNumero1.Text} {cmbOperador.Text} {txtNumero2} = {lblResultado}\n";
         }
+
+        private void btnConvertirADecimal_Click(object sender, EventArgs e)
+        {
+            Operando operandoDecimal = new Operando();
+            lblResultado.Text = operandoDecimal.BinarioDecimal(lblResultado.Text);
+        }
+
+        private void btnConvertirABinario_Click(object sender, EventArgs e)
+        {
+            Operando operandoBinario = new Operando();
+            lblResultado.Text = operandoBinario.BinarioDecimal(lblResultado.Text);
+        }
     }
 }
